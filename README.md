@@ -62,7 +62,7 @@
 <p align="center">
 <b>rexq-master-controller — Installing the container-tools package:</b>
 <br/>
-<img width="1318" height="583" alt="image" src="https://github.com/user-attachments/assets/914936ba-54ba-48a8-864a-d4c1e1415856" />
+<img width="1318" height="583" alt="dnf install container-tools -y on rexq-master-controller resolving dependencies and finishing with Complete" src="https://github.com/user-attachments/assets/914936ba-54ba-48a8-864a-d4c1e1415856" />
 
 
 
@@ -97,12 +97,12 @@
 ### Enable linger for daniel
 
 - `loginctl enable-linger daniel` (run as root): turns on "lingering" for daniel. His user-level systemd services start at boot and keep running after he logs out. Without it, container-cardealer would only run while daniel is logged in.
-- **No output:** the command succeeded silently. To confirm, run `loginctl show-user daniel | grep Linger`, which should show `Linger=yes`, or `ls /var/lib/systemd/linger`, which should list daniel.
-
+- **No output:** the command succeeded silently. To confirm, I can run `loginctl show-user daniel | grep Linger`, which should show `Linger=yes`, or `ls /var/lib/systemd/linger`, which should list daniel.
+  
 <p align="center">
 <b>rexq-master-controller — Enabling linger for daniel:</b>
 <br/>
-<img width="1427" height="155" alt="image" src="https://github.com/user-attachments/assets/ef48e8ab-3cb7-427e-926c-758b47f9a7ac" />
+<img width="1427" height="155" alt="loginctl enable-linger daniel run as root with no output" src="https://github.com/user-attachments/assets/ef48e8ab-3cb7-427e-926c-758b47f9a7ac" />
 
 
 </p>
